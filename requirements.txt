@@ -1,6 +1,7 @@
-streamlit>=1.25.0
-pandas>=2.0.0,<2.2.0
-scikit-learn>=1.2.0,<1.4.0
-plotly>=6.9.0,<7.0.0
+streamlit
+pandas
+scikit-learn
+plotly
+
 
 
