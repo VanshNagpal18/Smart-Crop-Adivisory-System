@@ -17,7 +17,7 @@ model.fit(X, y)
 # -------------------------------
 # Streamlit Page Settings
 # -------------------------------
-st.set_page_config(page_title="🌿 Smart Crop Advisor", page_icon="🌾", layout="wide")
+st.set_page_config(page_title="Smart Crop Advisor 🌿", page_icon="🌾", layout="wide")
 
 # Custom CSS for styling
 st.markdown("""
@@ -165,6 +165,7 @@ st.markdown("""
 © 2025, GrowWise- AI powered Crop Recommendation 🌾
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
