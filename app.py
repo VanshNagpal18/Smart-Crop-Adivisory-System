@@ -39,11 +39,13 @@ st.markdown("""
         color: #40916c;
         font-size: 18px;
         margin-bottom: 30px;
+        background color: #95d5b2;
     }
     .footer {
         text-align: center;
         color: #2d6a4f;
         font-size: 15px;
+        background color: #95d5b2;
         margin-top: 40px;
         padding: 10px;
         border-top: 1px solid #95d5b2;
@@ -127,6 +129,14 @@ if user_query:
         response = "Wheat, maize, and rice grow well in neutral soil."
     elif "high temperature" in query or "hot" in query:
         response = "Millet, cotton, and maize prefer hot climates."
+    elif "Hi " in query or "ph 6-7" in query:
+        response = "Hello Sir, Tell Me Your Query."
+    elif "What is this" in query or "GrowWise" in query:
+        response = "GrowWise, It is an AI-powered Crop Advisiory System."
+    elif "Who Made You" in query or "Name the Developer" in query:
+        response = "GrowWise is Developed By Vansh Nagpal in 2025."
+    elif "Is it Useful" in query or "Is it Practical to use" in query:
+        response = "Yes, It is."
     
     st.info(f"🤖 Chatbot Response: {response}")
 
@@ -157,3 +167,4 @@ st.markdown("""
 © 2025, GrowWise- AI powered Crop Recommendation 🌾
 </div>
 """, unsafe_allow_html=True)
+
