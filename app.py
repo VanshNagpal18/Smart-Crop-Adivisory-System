@@ -39,13 +39,11 @@ st.markdown("""
         color: #40916c;
         font-size: 18px;
         margin-bottom: 30px;
-        background color: #95d5b2;
     }
     .footer {
         text-align: center;
         color: #2d6a4f;
         font-size: 15px;
-        background color: #95d5b2;
         margin-top: 40px;
         padding: 10px;
         border-top: 1px solid #95d5b2;
@@ -167,4 +165,5 @@ st.markdown("""
 © 2025, GrowWise- AI powered Crop Recommendation 🌾
 </div>
 """, unsafe_allow_html=True)
+
 
