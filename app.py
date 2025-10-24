@@ -127,7 +127,7 @@ if user_query:
         response = "Wheat, maize, and rice grow well in neutral soil."
     elif "high temperature" in query or "hot" in query:
         response = "Millet, cotton, and maize prefer hot climates."
-    elif "Hi " in query or "ph 6-7" in query:
+    elif "Hi " in query or "Hello" in query:
         response = "Hello Sir, Tell Me Your Query."
     elif "What is this" in query or "GrowWise" in query:
         response = "GrowWise, It is an AI-powered Crop Advisiory System."
@@ -165,5 +165,6 @@ st.markdown("""
 © 2025, GrowWise- AI powered Crop Recommendation 🌾
 </div>
 """, unsafe_allow_html=True)
+
 
 
