@@ -21,111 +21,86 @@ st.set_page_config(page_title="Smart Crop Advisor 🌿", page_icon="🌾", layou
 
 # Custom CSS for styling
 st.markdown("""
-<style>
+    <style>
+    /* Main Background */
+    .stApp {
+        background: linear-gradient(135deg, #d4fc79, #96e6a1, #56ab2f);
+        color: #1b4332;
+        font-family: 'Segoe UI', sans-serif;
+    }
 
-/* ===== MAIN APP WRAPPER ===== */
-.app-container {
-    background: linear-gradient(135deg, #d4fc79, #96e6a1);
-    padding: 20px;
-    border-radius: 15px;
-}
+    /* Header Title */
+    .main-title {
+        text-align: center;
+        color: #ffffff;
+        font-size: 42px;
+        font-weight: 800;
+        padding: 15px;
+        border-radius: 12px;
+        background: linear-gradient(90deg, #2d6a4f, #40916c);
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    }
 
-/* ===== HEADER ===== */
-.app-container .header-box {
-    text-align: center;
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 25px;
-    background: linear-gradient(90deg, #2d6a4f, #40916c);
-    color: white;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-}
+    /* Subtitle */
+    .subtitle {
+        text-align: center;
+        color: #f1faee;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
 
-.app-container .header-box h1 {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 800;
-}
+    /* Cards / Sections */
+    .block-container {
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+    }
 
-.app-container .header-box p {
-    margin: 5px 0 0;
-    font-size: 18px;
-    color: #d8f3dc;
-}
+    /* Buttons */
+    .stButton>button {
+        background: linear-gradient(90deg, #38b000, #70e000);
+        color: white;
+        border-radius: 12px;
+        height: 3em;
+        width: 100%;
+        font-size: 17px;
+        border: none;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
 
-/* ===== INPUT SECTION ===== */
-.app-container .stSlider label {
-    color: #1b4332 !important;
-    font-weight: 600;
-}
+    .stButton>button:hover {
+        background: linear-gradient(90deg, #008000, #38b000);
+        transform: scale(1.05);
+    }
 
-/* ===== BUTTON ===== */
-.app-container .stButton>button {
-    background: linear-gradient(90deg, #38b000, #70e000);
-    color: white;
-    border-radius: 12px;
-    height: 3em;
-    width: 100%;
-    font-size: 17px;
-    border: none;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
+    /* Footer */
+    .footer {
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        margin-top: 40px;
+        padding: 15px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #1b4332, #2d6a4f);
+        box-shadow: 0px -3px 10px rgba(0,0,0,0.2);
+    }
 
-.app-container .stButton>button:hover {
-    background: linear-gradient(90deg, #008000, #38b000);
-    transform: scale(1.05);
-}
-
-/* ===== RESULT BOXES ===== */
-.app-container .stSuccess {
-    background-color: #d8f3dc !important;
-    color: #1b4332 !important;
-    border-radius: 10px;
-}
-
-.app-container .stInfo {
-    background-color: #e9f5db !important;
-    color: #1b4332 !important;
-    border-radius: 10px;
-}
-
-/* ===== CHART CONTAINER ===== */
-.app-container .stPlotlyChart {
-    background-color: white;
-    border-radius: 15px;
-    padding: 10px;
-}
-
-/* ===== FOOTER ===== */
-.app-container .footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 15px;
-    border-radius: 12px;
-    background: linear-gradient(90deg, #1b4332, #2d6a4f);
-    color: white;
-    font-size: 15px;
-    box-shadow: 0px -3px 10px rgba(0,0,0,0.2);
-}
-
-/* ===== REMOVE STREAMLIT DEFAULT HEADER ===== */
-header {visibility: hidden;}
-footer {visibility: hidden;}
-
-</style>
+    /* Input Labels */
+    label {
+        font-weight: 600 !important;
+        color: #1b4332 !important;
+    }
+    </style>
 """, unsafe_allow_html=True)
-st.markdown('<div class="app-container">', unsafe_allow_html=True)
 
 # -------------------------------
 # Header
 # -------------------------------
-st.markdown("""
-<div class="header-box">
-    <h1>🌾 GrowWise</h1>
-    <p>Smart Crop Advisory System</p>
-</div>
-""", unsafe_allow_html=True)
+st.markdown('<div class="main-title">🌾 GrowWise</div>', unsafe_allow_html=True) 
+st.markdown('<div class="subtitle">Smart Crop Advisory System</div>', unsafe_allow_html=True)
+st.divider()
 
 # -------------------------------
 # Input Fields
@@ -220,7 +195,7 @@ st.markdown("""
 © 2025, GrowWise- AI powered Crop Recommendation 🌾
 </div>
 """, unsafe_allow_html=True)
-st.markdown('</div>', unsafe_allow_html=True)
+
 
 
 
