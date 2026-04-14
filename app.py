@@ -22,45 +22,75 @@ st.set_page_config(page_title="Smart Crop Advisor 🌿", page_icon="🌾", layou
 # Custom CSS for styling
 st.markdown("""
     <style>
-    body {
-        background: linear-gradient(to bottom right, #e7f5dc, #c2e59c);
+    /* Main Background */
+    .stApp {
+        background: linear-gradient(135deg, #d4fc79, #96e6a1, #56ab2f);
         color: #1b4332;
         font-family: 'Segoe UI', sans-serif;
     }
+
+    /* Header Title */
     .main-title {
         text-align: center;
-        color: #2d6a4f;
-        font-size: 38px;
-        font-weight: 700;
-        margin-bottom: 5px;
+        color: #ffffff;
+        font-size: 42px;
+        font-weight: 800;
+        padding: 15px;
+        border-radius: 12px;
+        background: linear-gradient(90deg, #2d6a4f, #40916c);
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
     }
+
+    /* Subtitle */
     .subtitle {
         text-align: center;
-        color: #40916c;
+        color: #f1faee;
         font-size: 18px;
         margin-bottom: 30px;
     }
-    .footer {
-        text-align: center;
-        color: #2d6a4f;
-        font-size: 15px;
-        margin-top: 40px;
-        padding: 10px;
-        border-top: 1px solid #95d5b2;
+
+    /* Cards / Sections */
+    .block-container {
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
     }
+
+    /* Buttons */
     .stButton>button {
-        background-color: #52b788;
+        background: linear-gradient(90deg, #38b000, #70e000);
         color: white;
-        border-radius: 10px;
+        border-radius: 12px;
         height: 3em;
         width: 100%;
         font-size: 17px;
         border: none;
-        transition: 0.3s;
+        font-weight: 600;
+        transition: 0.3s ease;
     }
+
     .stButton>button:hover {
-        background-color: #2d6a4f;
-        color: #d8f3dc;
+        background: linear-gradient(90deg, #008000, #38b000);
+        transform: scale(1.05);
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        margin-top: 40px;
+        padding: 15px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #1b4332, #2d6a4f);
+        box-shadow: 0px -3px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Input Labels */
+    label {
+        font-weight: 600 !important;
+        color: #1b4332 !important;
     }
     </style>
 """, unsafe_allow_html=True)
