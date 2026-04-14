@@ -23,7 +23,7 @@ st.set_page_config(page_title="Smart Crop Advisor 🌿", page_icon="🌾", layou
 st.markdown("""
     <style>
  .stApp {
-    background-color: #0c9751;
+    background-color: #f3f8f5;
     color: #1b4332;
     font-family: 'Segoe UI', sans-serif;
 }
