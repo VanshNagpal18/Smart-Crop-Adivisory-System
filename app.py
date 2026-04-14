@@ -22,11 +22,11 @@ st.set_page_config(page_title="Smart Crop Advisor 🌿", page_icon="🌾", layou
 # Custom CSS for styling
 st.markdown("""
     <style>
-     body {
-       background: linear-gradient(135deg, #d4fc79, #96e6a1, #56ab2f);
-        color: #1b4332;
-        font-family: 'Segoe UI', sans-serif;
-    }
+ .stApp {
+    background: linear-gradient(135deg, #e9fcd4, #d4f8c4, #c7f2b8);
+    color: #1b4332;
+    font-family: 'Segoe UI', sans-serif;
+}
     .main-title {
         text-align: center;
         color: #2d6a4f;
