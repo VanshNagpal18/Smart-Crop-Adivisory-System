@@ -23,7 +23,7 @@ st.set_page_config(page_title="Smart Crop Advisor 🌿", page_icon="🌾", layou
 st.markdown("""
     <style>
  .stApp {
-    background-color: #eafaf1;
+    background-color: #ebf1ee;
     color: #1b4332;
     font-family: 'Segoe UI', sans-serif;
 }
@@ -142,6 +142,8 @@ if user_query:
         response = "GrowWise is Developed By Vansh Nagpal in 2025."
     elif "is it useful" in query or "is it practical to use" in query:
         response = "Yes, It is."
+    elif "how to use" in query or "tell about its functionality" in query:
+        response = "Yes offcourse, just Set the parameters according to your locality such as Temp,rainfall etc then click on predict crop you will get the suitable crop to grow"
     
     st.info(f"🤖 Chatbot Response: {response}")
 
