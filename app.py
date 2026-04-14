@@ -23,7 +23,7 @@ st.set_page_config(page_title="Smart Crop Advisor 🌿", page_icon="🌾", layou
 st.markdown("""
     <style>
      body {
-        background: linear-gradient(to bottom right, #e7f5dc, #c2e59c);
+       background: linear-gradient(135deg, #d4fc79, #96e6a1, #56ab2f);
         color: #1b4332;
         font-family: 'Segoe UI', sans-serif;
     }
@@ -33,13 +33,11 @@ st.markdown("""
         font-size: 38px;
         font-weight: 700;
         margin-bottom: 5px;
-        background: linear-gradient(90deg, #38b000, #70e000);
     }
     .subtitle {
         text-align: center;
         color: #40916c;
         font-size: 18px;
-        background: linear-gradient(90deg, #38b000, #70e000);
         margin-bottom: 30px;
     }
 
@@ -64,7 +62,6 @@ st.markdown("""
     /* Footer */
     .footer {
         text-align: center;
-        background: linear-gradient(90deg, #38b000, #70e000);
         color: #2d6a4f;
         font-size: 15px;
         margin-top: 40px;
