@@ -142,6 +142,8 @@ if user_query:
         response = "GrowWise is Developed By Vansh Nagpal in 2025."
     elif "is it useful" in query or "is it practical to use" in query:
         response = "Yes, It is."
+    elif "what type of data this system using" in query or "type of data" in query:
+        response = "GrowWise is using the Generalized form of data about crops."
     elif "how to use" in query or "tell about its functionality" in query:
         response = "Yes offcourse, just Set the parameters according to your locality such as Temp,rainfall etc. Then click on predict crop you will get the suitable crop to grow"
     
